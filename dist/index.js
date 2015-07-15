@@ -7,21 +7,35 @@ require('../css/double-bounce.css');
 
 module.exports = React.createClass({
   displayName: "ajaxing",
-  getDefaultProps: function() {},
+  getDefaultProps: function() {
+    return {
+      size: '20'
+    };
+  },
   render: function() {
-    var classes;
-    classes = 'ajax-double-bounce';
+    var classes, style;
+    classes = 'react-ajaxing';
     if (this.props.className) {
       classes = classes + " " + this.props.className;
     }
+    if (this.props.size) {
+      style = {
+        width: this.props.size + "px",
+        height: this.props.size + "px"
+      };
+    }
     if (this.props.loading) {
       return React.createElement("div", React.__spread({}, this.props, {
-        "className": classes
+        "className": classes,
+        "style": style
       }), React.createElement("div", {
+        "className": "ajax-double-bounce",
+        "style": style
+      }, React.createElement("div", {
         "className": "ajax-double-bounce1"
       }), React.createElement("div", {
         "className": "ajax-double-bounce2"
-      }));
+      })));
     } else {
       return this.props.children;
     }
