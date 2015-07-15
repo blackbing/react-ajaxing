@@ -1,7 +1,7 @@
 # react-ajaxing
 tell the component ajax is sending
 
-[Imgur](http://i.imgur.com/A3PPhCY.gifv)
+[![react-ajaxing](http://i.imgur.com/A3PPhCY.gif)](http://i.imgur.com/A3PPhCY.gif)
 
 # Usage
 
