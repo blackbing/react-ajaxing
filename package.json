@@ -1,7 +1,7 @@
 {
   "name": "react-ajaxing",
   "description": "tell the component ajax is sending",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Bingo Yang <blackbing@gmail.com>",
   "browserify": {
     "transform": [
@@ -12,7 +12,8 @@
     "url": "https://github.com/blackbing/react-ajaxing/issues"
   },
   "dependencies": {
-    "cssify": "^0.7.0"
+    "cssify": "^0.7.0",
+    "object-assign": "^3.0.0"
   },
   "devDependencies": {
     "coffee-react": "^3.0.1",

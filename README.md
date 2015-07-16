@@ -24,7 +24,7 @@ login: function(){
 render: function(){
   return (
     <button type ="submit" onClick={@login}>
-      <Spinner loading={@state.loading} size={20}><span>Login</span></Spinner>
+      <Spinner loading={@state.loading} size={20} color="red"><span>Login</span></Spinner>
     </button>
   )
 }
@@ -32,8 +32,10 @@ render: function(){
 
 # Options
 
+### loading(boolean): indicate it is loading status or not
+
 ### size(number): spinner size(px)
 default: 20
 
-### loading(boolean): indicate it is loading status or not
-
+### color(string): spinner color
+default: '#FFF'
