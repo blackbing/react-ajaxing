@@ -3,6 +3,14 @@ tell the component ajax is sending
 
 [![react-ajaxing](http://i.imgur.com/A3PPhCY.gif)](http://i.imgur.com/A3PPhCY.gif)
 
+
+# Install
+
+
+```shell
+npm install react-ajaxing
+```
+
 # Usage
 
 ```jsx
