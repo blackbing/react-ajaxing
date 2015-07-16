@@ -32,10 +32,13 @@ render: function(){
 
 # Options
 
-### loading(boolean): indicate it is loading status or not
+#### loading(boolean): Required
+indicate it is loading status or not
 
-### size(number): spinner size(px)
+#### size(number): Optional
+spinner size(px)
 default: 20
 
-### color(string): spinner color
+#### color(string): Optional
+spinner color
 default: '#FFF'
