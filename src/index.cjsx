@@ -27,9 +27,12 @@ module.exports = React.createClass
     bounceStyle =
       backgroundColor: @props.color
 
+    exProps = objectAsign({}, @props);
+    delete exProps.loading
+
     if @props.loading
       return (
-        <div {... @props} className={classes} style={style}>
+        <div {... exProps} className={classes} style={style}>
           <div className="ajax-double-bounce" style={size}>
             <div className="ajax-double-bounce1" style={bounceStyle}></div>
             <div className="ajax-double-bounce2" style={bounceStyle}></div>

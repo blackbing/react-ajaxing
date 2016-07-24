@@ -21,7 +21,7 @@ module.exports = React.createClass({
     };
   },
   render: function() {
-    var bounceStyle, classes, size, style;
+    var bounceStyle, classes, exProps, size, style;
     classes = 'react-ajaxing';
     if (this.props.className) {
       classes = classes + " " + this.props.className;
@@ -36,8 +36,10 @@ module.exports = React.createClass({
     bounceStyle = {
       backgroundColor: this.props.color
     };
+    exProps = objectAsign({}, this.props);
+    delete exProps.loading;
     if (this.props.loading) {
-      return React.createElement("div", Object.assign({}, this.props, {
+      return React.createElement("div", Object.assign({}, exProps, {
         "className": classes,
         "style": style
       }), React.createElement("div", {
