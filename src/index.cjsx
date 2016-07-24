@@ -22,7 +22,7 @@ module.exports = React.createClass
       height: "#{@props.size}px"
 
     if @props.style
-      style = objectAsign(@props.style, size)
+      style = objectAsign({}, @props.style, size)
 
     bounceStyle =
       backgroundColor: @props.color
